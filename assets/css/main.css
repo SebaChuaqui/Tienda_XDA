@@ -160,5 +160,52 @@ h1, h2, h3, label {
     grid-template-areas: "nav nav" "ls rs";
   }
 }
+.left-section {
+  grid-area: ls;
+}
+.left-section__about {
+  padding: 48px 80px;
+}
+.left-section__about-title {
+  font-size: 50px, 16em;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 19.2px;
+}
+.left-section__about-content {
+  font-size: 50px, 16em;
+  line-height: 27.2px;
+  color: #646266;
+}
+.left-section__newsletter {
+  background-color: #0C0910;
+  color: #FFF;
+  padding: 16px 80px;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 172px;
+}
+.left-section__subscribe {
+  position: absolute;
+  top: 58px;
+  right: -58px;
+  transform: rotate(90deg);
+  background-color: #FFF;
+  color: #0C0910;
+  width: 172px;
+  text-align: center;
+}
+.left-section .right-section {
+  grid-area: rs;
+  height: 100%;
+  width: 100%;
+}
+.left-section__img {
+  height: 100%;
+  background-color: #0C0910;
+  background-image: url("/assets/img/imagen1.png");
+  background-size: cover;
+  background-position: top center;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,54 @@
+.left-section{
+    grid-area: ls;
+
+    &__about{
+        padding: 48px 80px;
+    }
+
+    &__about-title{
+        @include relative-converter(font-size, em, $xxx-large, 16);
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 19.2px;
+    }
+
+    &__about-content{
+        @include relative-converter(font-size, em, $xxx-large, 16);
+        line-height: 27.2px;
+        color: $granite-gray;
+    }
+
+    &__newsletter{
+        background-color: $smocky-black;
+        color: $white;
+        padding: 16px 80px;
+        box-sizing: border-box;
+        position: relative;
+        min-height: 172px;
+    }
+
+    &__subscribe{
+        position: absolute;
+        top: 58px;
+        right: -58px;
+        transform: rotate(90deg);
+        background-color: $white;
+        color: $smocky-black;
+        width: 172px;
+        text-align: center;
+    }
+
+    .right-section{
+        grid-area: rs;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__img{
+        height: 100%;
+        background-color: $smocky-black;
+        background-image: url("/assets/img/imagen1.png");
+        background-size: cover;
+        background-position: top center;
+    }
+}
