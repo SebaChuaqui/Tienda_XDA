@@ -1,0 +1,70 @@
+.main-header {
+    grid-area: nav;
+}
+
+.navigation {
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__collapsible {
+        text-align: right;
+
+        label {
+            font-size: 28.8px;
+
+            i {
+                padding: 35.2px;
+            }
+        }
+    }
+
+    #menu {
+        display: none;
+    }
+
+    input:checked~.navigation__container {
+        max-height: 100%;
+    }
+
+    &__container {
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $white;
+    }
+
+    &__item {
+        display: block;
+        text-align: center;
+        margin: 0 16px;
+        padding: 16px 8px;
+        border-bottom: solid 1px $granite-gray;
+    }
+
+    &__list {
+        display: block;
+        text-align: center;
+
+        .navigation__item:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__link {
+        color: $smocky-black;
+        @include relative-converter(font-size, em, $small, 16);
+        font-weight: $bold;
+        padding: 8px 16px;
+
+        &:hover {
+            color: $quick-silver;
+        }
+    }
+}
+
+

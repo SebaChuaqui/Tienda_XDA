@@ -16,4 +16,86 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, label {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+}
+
+.btn-primary {
+  border: solid 1px black;
+  background-color: #FFF;
+  color: #0C0910;
+  font-weight: 700;
+  padding: 16px;
+}
+.btn-primary:hover {
+  border: solid 1px #A6A5AB;
+}
+.btn-primary:focus {
+  color: #A6A5AB;
+  border: solid 1px #A6A5AB;
+}
+
+.main-header {
+  grid-area: nav;
+}
+
+.navigation {
+  position: relative;
+}
+.navigation__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.navigation__collapsible {
+  text-align: right;
+}
+.navigation__collapsible label {
+  font-size: 28.8px;
+}
+.navigation__collapsible label i {
+  padding: 35.2px;
+}
+.navigation #menu {
+  display: none;
+}
+.navigation input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+.navigation__container {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFF;
+}
+.navigation__item {
+  display: block;
+  text-align: center;
+  margin: 0 16px;
+  padding: 16px 8px;
+  border-bottom: solid 1px #646266;
+}
+.navigation__list {
+  display: block;
+  text-align: center;
+}
+.navigation__list .navigation__item:last-child {
+  border-bottom: none;
+}
+.navigation__link {
+  color: #0C0910;
+  font-size: 14px, 16em;
+  font-weight: 700;
+  padding: 8px 16px;
+}
+.navigation__link:hover {
+  color: #A6A5AB;
+}
+
 /*# sourceMappingURL=main.css.map */

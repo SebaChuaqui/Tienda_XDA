@@ -1,0 +1,16 @@
+.btn-primary{
+    border: solid 1px black;
+    background-color: $white;
+    color: $smocky-black;
+    font-weight: $bold;
+    padding: 16px;
+
+&:hover{
+    border: solid 1px $quick-silver;
+}
+
+&:focus{
+    color: $quick-silver;
+    border: solid 1px $quick-silver;
+}
+}
