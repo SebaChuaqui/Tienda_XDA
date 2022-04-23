@@ -1,0 +1,12 @@
+.form-primary{
+
+    &__label{
+        display: block;
+        padding-bottom: 8px;
+    }
+
+    &__input{
+        width: 70%;
+        padding: 8px;
+    }
+}

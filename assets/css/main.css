@@ -98,4 +98,67 @@ h1, h2, h3, label {
   color: #A6A5AB;
 }
 
+@media only screen and (min-width: 769px) {
+  .navigation__logo {
+    transform: rotate(270deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .navigation__collapsible label {
+    display: none;
+  }
+  .navigation__container {
+    max-height: 100%;
+    padding: 32px;
+    overflow: visible;
+  }
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    pad: inherit;
+    margin: inherit;
+  }
+  .navigation__item {
+    display: inline-block;
+    text-align: center;
+    margin: 0 16px;
+    padding: 16px 8px;
+    border-bottom: none;
+  }
+  .navigation__link {
+    padding: 32px;
+    color: #0C0910;
+    font-size: 14px, 16em;
+    font-weight: 700;
+  }
+  .navigation__link:hover {
+    color: #A6A5AB;
+  }
+}
+.form-primary__label {
+  display: block;
+  padding-bottom: 8px;
+}
+.form-primary__input {
+  width: 70%;
+  padding: 8px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 101.4px 1fr 2fr;
+  grid-template-areas: "nav" "rs" "ls";
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 101.4px auto;
+    grid-template-areas: "nav nav" "ls rs";
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

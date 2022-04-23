@@ -67,4 +67,51 @@
     }
 }
 
+@media only screen and (min-width: 769px) {
+    .navigation {
+        &__logo {
+            transform: rotate(270deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
+        &__collapsible {
+            label {
+                display: none;
+            }
+        }
+
+        &__container {
+            max-height: 100%;
+            padding: 32px;
+            overflow: visible;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+            pad: inherit;
+            margin: inherit;
+        }
+
+        &__item {
+            display: inline-block;
+            text-align: center;
+            margin: 0 16px;
+            padding: 16px 8px;
+            border-bottom: none;
+        }
+
+        &__link {
+            padding: 32px;
+            color: $smocky-black;
+            @include relative-converter(font-size, em, $small, 16);
+            font-weight: $bold;
+
+            &:hover {
+                color: $quick-silver;
+            }
+        }
+    }
+}
