@@ -1,0 +1,19 @@
+img {
+  max-width: 100%;
+}
+
+body, ul {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */
