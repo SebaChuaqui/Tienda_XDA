@@ -204,7 +204,6 @@ h1, h2, h3, label {
 .left-section__img {
   height: 100%;
   background-color: #0C0910;
-  background-image: url("/assets/img/imagen1.png");
   background-size: cover;
   background-position: top center;
 }
