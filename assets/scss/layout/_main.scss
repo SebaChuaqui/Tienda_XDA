@@ -6,7 +6,7 @@
     }
 
     &__about-title{
-        @include relative-converter(font-size, em, $xxx-large, 16);
+        @include relative-converter(font-size, em, $xxx-large, 20);
         margin: 0;
         text-transform: uppercase;
         line-height: 19.2px;
@@ -22,6 +22,7 @@
         background-color: $smocky-black;
         color: $white;
         padding: 16px 80px;
+        margin-left: 2px;
         box-sizing: border-box;
         position: relative;
         min-height: 172px;

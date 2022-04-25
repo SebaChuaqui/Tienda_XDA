@@ -167,13 +167,13 @@ h1, h2, h3, label {
   padding: 48px 80px;
 }
 .left-section__about-title {
-  font-size: 50px, 16em;
+  font-size: 70px, 20em;
   margin: 0;
   text-transform: uppercase;
   line-height: 19.2px;
 }
 .left-section__about-content {
-  font-size: 50px, 16em;
+  font-size: 70px, 16em;
   line-height: 27.2px;
   color: #646266;
 }
@@ -181,6 +181,7 @@ h1, h2, h3, label {
   background-color: #0C0910;
   color: #FFF;
   padding: 16px 80px;
+  margin-left: 2px;
   box-sizing: border-box;
   position: relative;
   min-height: 172px;
