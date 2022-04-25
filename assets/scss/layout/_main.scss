@@ -6,10 +6,11 @@
     }
 
     &__about-title{
-        @include relative-converter(font-size, em, $xxx-large, 20);
+        @include relative-converter(font-size, em, $xxx-large, 16);
         margin: 0;
         text-transform: uppercase;
         line-height: 19.2px;
+        text-align: center;
     }
 
     &__about-content{
@@ -50,5 +51,6 @@
         background-color: $smocky-black;
         background-size: cover;
         background-position: top center;
+        display: block;
     }
 }
