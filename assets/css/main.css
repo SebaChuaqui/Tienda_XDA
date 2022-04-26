@@ -162,19 +162,26 @@ h1, h2, h3, label {
 }
 .left-section {
   grid-area: ls;
+  display: flex;
+}
+.left-section section {
+  display: flex;
+  flex-direction: column;
 }
 .left-section__about {
   padding: 48px 80px;
+  flex-grow: 1;
 }
 .left-section__about-title {
-  font-size: 70px, 16em;
+  font-size: 30px;
   margin: 0;
   text-transform: uppercase;
   line-height: 19.2px;
   text-align: center;
 }
 .left-section__about-content {
-  font-size: 70px, 16em;
+  padding-top: 50px;
+  font-size: 20px;
   line-height: 27.2px;
   color: #646266;
 }
@@ -197,17 +204,18 @@ h1, h2, h3, label {
   width: 172px;
   text-align: center;
 }
-.left-section .right-section {
-  grid-area: rs;
-  height: 100%;
-  width: 100%;
-}
 .left-section__img {
   height: 100%;
   background-color: #0C0910;
   background-size: cover;
   background-position: top center;
   display: block;
+}
+
+.right-section {
+  grid-area: rs;
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,19 @@
 .left-section{
     grid-area: ls;
+    display: flex;
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
 
     &__about{
         padding: 48px 80px;
+        flex-grow: 1;
     }
 
     &__about-title{
-        @include relative-converter(font-size, em, $xxx-large, 16);
+        font-size: $xx-large;
         margin: 0;
         text-transform: uppercase;
         line-height: 19.2px;
@@ -14,7 +21,8 @@
     }
 
     &__about-content{
-        @include relative-converter(font-size, em, $xxx-large, 16);
+        padding-top: 50px;
+        font-size: $x-large;
         line-height: 27.2px;
         color: $granite-gray;
     }
@@ -40,11 +48,6 @@
         text-align: center;
     }
 
-    .right-section{
-        grid-area: rs;
-        height: 100%;
-        width: 100%;
-    }
 
     &__img{
         height: 100%;
@@ -54,3 +57,10 @@
         display: block;
     }
 }
+
+.right-section{
+    grid-area: rs;
+    height: 100%;
+    width: 100%;
+}
+
